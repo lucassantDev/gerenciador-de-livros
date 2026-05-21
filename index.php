@@ -1,11 +1,15 @@
 <?php
 
     $livros = [
-        ['id' => 1, 'titulo' => 'Senhor dos Anéis', 'Autor' => 'Fulano 1', 'Descricao' => 'História de Fulano 1'],
-        ['id' => 2, 'titulo' => 'George Foreman', 'Autor' => 'Fulano 2', 'Descricao' => 'História de Fulano 2'],
-        ['id' => 3, 'titulo' => '8 mile', 'Autor' => 'Fulano 3', 'Descricao' => 'História de Fulano 3'],
-        ['id' => 4, 'titulo' => 'Prenda-me se for capaz', 'Autor' => 'Fulano 4', 'Descricao' => 'História de Fulano 4'],
-        ['id' => 5, 'titulo' => 'As Aventuras de Pi', 'Autor' => 'Fulano 5', 'Descricao' => 'História de Fulano 5']
+        ['id' => 1, 'titulo' => 'Senhor dos Anéis', 'Autor' => 'J.R.R. Tolkien', 'Descricao' => 'Uma épica de fantasia que segue a jornada de um hobbit chamado Frodo que deve destruir um anel mágico poderoso para salvar o mundo. Ambientado na Terra-média, o livro combina aventura, magia, amizade e sacrifício em uma narrativa envolvente que conquistou milhões de leitores ao redor do mundo. Uma obra-prima da literatura fantástica que definiu o gênero para gerações futuras.'],
+        ['id' => 2, 'titulo' => 'George: Foreman', 'Autor' => 'George Foreman', 'Descricao' => 'A autobiografia inspiradora de George Foreman, um dos maiores nomes da história do boxe profissional. O livro retrata a jornada de Foreman desde sua infância pobre em Houston, Texas, passando por sua carreira como pugilista campeão olímpico, sua luta memorável contra Muhammad Ali e seu retorno ao boxe décadas depois. Além da vida no ringue, Foreman compartilha sua profunda transformação espiritual, sua conversão ao cristianismo, sua carreira como pastor e seu sucesso como empresário com a marca de seus grelhadores. Uma história de resiliência, fé, redenção e superação que inspirou milhões de pessoas ao redor do mundo.'],
+        ['id' => 3, 'titulo' => 'A Culpa é das Estrelas', 'Autor' => 'John Green', 'Descricao' => 'Um romance comovente sobre dois adolescentes com câncer que se encontram e vivem uma história de amor inesperada. Através de cartas, conversas profundas e aventuras, os personagens enfrentam a morte com sabedoria, humor e esperança. O livro explora temas universais como o significado da vida, o amor genuíno e como deixar um legado duradouro, conquistando leitores de todas as idades com sua sensibilidade e mensagens profundas.'],
+        ['id' => 4, 'titulo' => 'Prenda-me se for Capaz', 'Autor' => 'Frank Abagnale', 'Descricao' => 'A autobiografia real de Frank Abagnale, um criminoso que se tornou famoso por suas fraudes sofisticadas quando era jovem. O livro relata como ele falsificou cheques, se passou por diversas profissões e enganou o FBI durante anos. Uma história fascinante de crime, inteligência e redenção que mostra o cat-and-mouse entre um criminoso genial e agentes federais, culminando em sua prisão e eventual trabalho como consultor de segurança.'],
+        ['id' => 5, 'titulo' => 'A Menina que Roubava Livros', 'Autor' => 'Markus Zusak', 'Descricao' => 'Ambientado na Alemanha nazista, o livro segue Liesel, uma menina que rouba livros e os compartilha em seu porão com judeus escondidos durante a Segunda Guerra Mundial. Narrado pela Morte, a história retrata a humanidade, esperança e poder das palavras em tempos de guerra e destruição. Uma narrativa comovente sobre como a literatura pode ser um ato de rebelião e resistência contra a opressão e a intolerância.'],
+        ['id' => 6, 'titulo' => 'Dom Casmurro', 'Autor' => 'Machado de Assis', 'Descricao' => 'Um clássico da literatura brasileira que narra a história de um homem que, ao envelhecer, decide registrar sua vida passada para uma vizinha. O romance explora temas de amor, ciúme, desconfiança e traição através de uma narrativa envolvente que questiona a subjetividade da memória. Considerado uma obra-prima por sua complexidade psicológica, estilo narrativo inovador e profundidade das personagens que permanecem relevantes até os dias atuais.'],
+        ['id' => 7, 'titulo' => 'O Poder do Hábito', 'Autor' => 'Charles Duhigg', 'Descricao' => 'Um livro revelador que explora a ciência por trás da formação de hábitos e como compreendê-la pode transformar nossas vidas. Charles Duhigg analisa histórias reais de pessoas e organizações que mudaram suas vidas ao dominar seus hábitos. O livro apresenta o conceito do "loop do hábito" - pista, rotina e recompensa - e oferece estratégias práticas para quebrar maus hábitos e desenvolver novos, positivos, que levam ao sucesso pessoal e profissional.'],
+        ['id' => 8, 'titulo' => '1984', 'Autor' => 'George Orwell', 'Descricao' => 'Um romance distópico que retrata um futuro totalitário onde o governo controla todos os aspectos da vida dos cidadãos através da vigilância, propaganda e revisão da história. O protagonista Winston Smith trabalha para o regime enquanto secretamente questiona sua autoridade. Uma crítica potente ao autoritarismo, liberdade de pensamento e manipulação da verdade que continua sendo alarmantemente relevante na era digital, explorador de conceitos como "novilingua" e "duplipensar".'],
+        ['id' => 9, 'titulo' => 'O Cortiço', 'Autor' => 'Aluísio Azevedo', 'Descricao' => 'Um romance brasileiro que retrata a vida em um cortiço no Rio de Janeiro do século XIX, mostrando as condições de pobreza, exploração e os relacionamentos complexos entre seus moradores. Aluísio Azevedo utiliza o cortiço como um microcosmo da sociedade, explorando temas de classe social, sexualidade, preconceito racial e aspirações humanas. Sendo um precursor do realismo e naturalismo no Brasil, o livro oferece uma crítica social profunda e uma representação crua da realidade das comunidades pobres urbanas.']
     ]
 ?>
 
@@ -43,91 +47,26 @@
         </form>
 
         <!-- lista de livros -->
-        <section class="grid gap-4 grid-cols-1 md:grid-cols-2 lg:grind-cols-3">
+        <section class="grid gap-4 grid-cols-1 md:grid grid-cols-2 lg:grid grid-cols-3">
             <!-- Livro -->
-            <div class="p-2 rounded border-stone-800 border-2 bg-stone-900">
-                <div class="flex">
-                    <div class="w-1/3">Imagem</div>
-                    <div>
-                        <a href="/livro.php" class="fon-semibold">Título</href>
-                        <div class="text-xs italic">Autor</div>
-                        <div class="text-xs italic">⭐⭐⭐⭐⭐(3 Avaliação)</div>
-                    </div>
-                </div>
-                <div>
-                    Descrição
-                </div>
-            </div>
 
-            <div class="p-2 rounded border-stone-800 border-2 bg-stone-900">
-                <div class="flex">
-                    <div class="w-1/3">Imagem</div>
-                    <div>
-                        <a href="/livro.php" class="fon-semibold">Título</href>
-                        <div class="text-xs italic">Autor</div>
-                        <div class="text-xs italic">⭐⭐⭐⭐⭐(3 Avaliação)</div>
-                    </div>
-                </div>
-                <div>
-                    Descrição
-                </div>
-            </div>
+            <?php foreach($livros as $livro): ?>
 
-            <div class="p-2 rounded border-stone-800 border-2 bg-stone-900">
-                <div class="flex">
-                    <div class="w-1/3">Imagem</div>
-                    <div>
-                        <a href="/livro.php" class="fon-semibold">Título</href>
-                        <div class="text-xs italic">Autor</div>
-                        <div class="text-xs italic">⭐⭐⭐⭐⭐(3 Avaliação)</div>
+                <div class="p-2 rounded border-stone-800 border-2 bg-stone-900">
+                    <div class="flex">
+                        <div class="w-1/3">Imagem</div>
+                        <div class="space-y-2">
+                            <a href="/livro.php?id=<?=$livro['id']?>" class="fon-semibold hover:underline"><?=$livro['titulo']?></a>
+                            <div class="text-xs italic"><?=$livro['Autor']?></div>
+                            <div class="text-xs italic">⭐⭐⭐⭐⭐(3 Avaliação)</div>
+                        </div>
+                    </div>
+                    <div class="text-sm mt-2">
+                        <?=$livro['Descricao'] ?>
                     </div>
                 </div>
-                <div>
-                    Descrição
-                </div>
-            </div>
 
-            <div class="p-2 rounded border-stone-800 border-2 bg-stone-900">
-                <div class="flex">
-                    <div class="w-1/3">Imagem</div>
-                    <div>
-                        <a href="/livro.php" class="fon-semibold">Título</href>
-                        <div class="text-xs italic">Autor</div>
-                        <div class="text-xs italic">⭐⭐⭐⭐⭐(3 Avaliação)</div>
-                    </div>
-                </div>
-                <div>
-                    Descrição
-                </div>
-            </div>
-
-            <div class="p-2 rounded border-stone-800 border-2 bg-stone-900">
-                <div class="flex">
-                    <div class="w-1/3">Imagem</div>
-                    <div>
-                        <a href="/livro.php" class="fon-semibold">Título</href>
-                        <div class="text-xs italic">Autor</div>
-                        <div class="text-xs italic">⭐⭐⭐⭐⭐(3 Avaliação)</div>
-                    </div>
-                </div>
-                <div>
-                    Descrição
-                </div>
-            </div>
-
-            <div class="p-2 rounded border-stone-800 border-2 bg-stone-900">
-                <div class="flex">
-                    <div class="w-1/3">Imagem</div>
-                    <div>
-                        <a href="/livro.php" class="fon-semibold">Título</href>
-                        <div class="text-xs italic">Autor</div>
-                        <div class="text-xs italic">⭐⭐⭐⭐⭐(3 Avaliação)</div>
-                    </div>
-                </div>
-                <div>
-                    Descrição
-                </div>
-            </div>
+            <?php endforeach; ?>
 
         </section>
     </main>

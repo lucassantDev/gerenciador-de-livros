@@ -7,6 +7,7 @@
     <title>Gerenciador</title>
 </head>
 <body class="bg-stone-950 text-stone-200">
+
     <header class="bg-stone-800 border-b-stone-800 ">
         <nav class="mx-auto max-w-screen-lg flex justify-between px-8 py-4" >
             <div class="font-bold text-xl trackin-wide">BOOK WISE</div>
@@ -19,5 +20,17 @@
             </ul>
         </nav>
     </header>
+
+    <main class="mx-auto max-w-screen-lg space-y-6">
+        <form class="w-full flex space-x-2 mt-6">
+            <input 
+                type="text"
+                class="border-stone-800 border-2 rounded-md bg-stone-900 text-sm focus:outline-none px-2 py-1"
+                placeholder="Pesquisar..."
+            >
+            <button type="submit">🔍</button>
+        </form>
+    </main>
+    
 </body>
 </html>

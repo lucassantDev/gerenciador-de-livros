@@ -1,3 +1,14 @@
+<?php
+
+    $livros = [
+        ['id' => 1, 'titulo' => 'Senhor dos Anéis', 'Autor' => 'Fulano 1', 'Descricao' => 'História de Fulano 1'],
+        ['id' => 2, 'titulo' => 'George Foreman', 'Autor' => 'Fulano 2', 'Descricao' => 'História de Fulano 2'],
+        ['id' => 3, 'titulo' => '8 mile', 'Autor' => 'Fulano 3', 'Descricao' => 'História de Fulano 3'],
+        ['id' => 4, 'titulo' => 'Prenda-me se for capaz', 'Autor' => 'Fulano 4', 'Descricao' => 'História de Fulano 4'],
+        ['id' => 5, 'titulo' => 'As Aventuras de Pi', 'Autor' => 'Fulano 5', 'Descricao' => 'História de Fulano 5']
+    ]
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -30,7 +41,96 @@
             >
             <button type="submit">🔍</button>
         </form>
+
+        <!-- lista de livros -->
+        <section class="grid gap-4 grid-cols-1 md:grid-cols-2 lg:grind-cols-3">
+            <!-- Livro -->
+            <div class="p-2 rounded border-stone-800 border-2 bg-stone-900">
+                <div class="flex">
+                    <div class="w-1/3">Imagem</div>
+                    <div>
+                        <a href="/livro.php" class="fon-semibold">Título</href>
+                        <div class="text-xs italic">Autor</div>
+                        <div class="text-xs italic">⭐⭐⭐⭐⭐(3 Avaliação)</div>
+                    </div>
+                </div>
+                <div>
+                    Descrição
+                </div>
+            </div>
+
+            <div class="p-2 rounded border-stone-800 border-2 bg-stone-900">
+                <div class="flex">
+                    <div class="w-1/3">Imagem</div>
+                    <div>
+                        <a href="/livro.php" class="fon-semibold">Título</href>
+                        <div class="text-xs italic">Autor</div>
+                        <div class="text-xs italic">⭐⭐⭐⭐⭐(3 Avaliação)</div>
+                    </div>
+                </div>
+                <div>
+                    Descrição
+                </div>
+            </div>
+
+            <div class="p-2 rounded border-stone-800 border-2 bg-stone-900">
+                <div class="flex">
+                    <div class="w-1/3">Imagem</div>
+                    <div>
+                        <a href="/livro.php" class="fon-semibold">Título</href>
+                        <div class="text-xs italic">Autor</div>
+                        <div class="text-xs italic">⭐⭐⭐⭐⭐(3 Avaliação)</div>
+                    </div>
+                </div>
+                <div>
+                    Descrição
+                </div>
+            </div>
+
+            <div class="p-2 rounded border-stone-800 border-2 bg-stone-900">
+                <div class="flex">
+                    <div class="w-1/3">Imagem</div>
+                    <div>
+                        <a href="/livro.php" class="fon-semibold">Título</href>
+                        <div class="text-xs italic">Autor</div>
+                        <div class="text-xs italic">⭐⭐⭐⭐⭐(3 Avaliação)</div>
+                    </div>
+                </div>
+                <div>
+                    Descrição
+                </div>
+            </div>
+
+            <div class="p-2 rounded border-stone-800 border-2 bg-stone-900">
+                <div class="flex">
+                    <div class="w-1/3">Imagem</div>
+                    <div>
+                        <a href="/livro.php" class="fon-semibold">Título</href>
+                        <div class="text-xs italic">Autor</div>
+                        <div class="text-xs italic">⭐⭐⭐⭐⭐(3 Avaliação)</div>
+                    </div>
+                </div>
+                <div>
+                    Descrição
+                </div>
+            </div>
+
+            <div class="p-2 rounded border-stone-800 border-2 bg-stone-900">
+                <div class="flex">
+                    <div class="w-1/3">Imagem</div>
+                    <div>
+                        <a href="/livro.php" class="fon-semibold">Título</href>
+                        <div class="text-xs italic">Autor</div>
+                        <div class="text-xs italic">⭐⭐⭐⭐⭐(3 Avaliação)</div>
+                    </div>
+                </div>
+                <div>
+                    Descrição
+                </div>
+            </div>
+
+        </section>
     </main>
-    
+
 </body>
 </html>

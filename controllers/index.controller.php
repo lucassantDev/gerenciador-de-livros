@@ -1,7 +1,6 @@
 <?php
 
-    require "dados.php";
+    require 'dados.php';
 
-    // carregando view
-    view('index')
+    view('index', compact('livros'));
 ?>

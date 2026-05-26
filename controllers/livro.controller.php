@@ -8,6 +8,6 @@
     $livro = array_pop($filtrado);
 
     // carregando view
-    view('livro');
+    view('livro', compact('livro'));
   
 ?>

@@ -1,4 +1,10 @@
-<?=$livro['titulo'] ?>
+<?php
+
+    require 'dados.php';
+
+?>
+
+<?php foreach($livros as $livro): ?>
 <div class="p-2 rounded border-stone-800 border-2 bg-stone-900">
     <div class="flex">
         <div class="w-1/3">Imagem</div>
@@ -12,3 +18,4 @@
         <?=$livro['Descricao'] ?>
     </div>
 </div>
+<?php endforeach; ?>

@@ -1,3 +1,4 @@
+
 <form class="w-full flex space-x-2 mt-6">
     <input 
         type="text"
@@ -17,7 +18,7 @@
         <div class="flex">
             <div class="w-1/3">Imagem</div>
             <div class="space-y-2">
-                <a href="/livro.php?id=<?=$livro['id']?>" class="fon-semibold hover:underline"><?=$livro['titulo']?></a>
+                <a href="/livro?id=<?=$livro['id']?>" class="fon-semibold hover:underline"><?=$livro['titulo']?></a>
                 <div class="text-xs italic"><?=$livro['Autor']?></div>
                 <div class="text-xs italic">⭐⭐⭐⭐⭐(3 Avaliação)</div>
             </div>
@@ -26,7 +27,4 @@
             <?=$livro['Descricao'] ?>
         </div>
     </div>
-
-<?php endforeach; ?>
-
 </section>

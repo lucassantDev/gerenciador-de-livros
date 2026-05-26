@@ -1,9 +1,7 @@
 <?php
 
-require 'dados.php';
-  
-$view = 'index';
+require 'functions.php';
 
-require 'views/template/app.php';
+require 'routes.php';
+
 ?>
-
